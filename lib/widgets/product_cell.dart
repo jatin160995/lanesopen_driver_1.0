@@ -52,6 +52,7 @@ class _ProductCellState extends State<ProductCell> {
     if (widget.arrayType == isTodo){quantity = widget.productDetail['qty_ordered'];}
     else if(widget.arrayType == isPending){quantity = widget.productDetail[pendingQuantity];}
     else if(widget.arrayType == isDone){quantity = widget.productDetail[doneQuantity];}
+    else if(widget.arrayType == "1"){quantity = widget.productDetail['qty_ordered'];}
 
 
 

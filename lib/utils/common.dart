@@ -20,8 +20,8 @@ var val = 'heloo';
 
 const auth = 'Bearer 64tdnqc6cuwr56a3yk2qlazwt1n8bmgf';
 const contentType = 'application/json';
-const domainURL = 'https://lanesopen.com/';
-const imageUrl = 'https://lanesopen.com/pub/media/catalog/product/';
+const domainURL = 'https://demo3.lanesopen.com/';
+const imageUrl = 'https://demo3.lanesopen.com/pub/media/catalog/product/';
 String loginUrl = domainURL+'index.php/rest/V1/integration/admin/token';
 String userInfo = domainURL+ 'index.php/rest/V1/hello/name/';
 String orderInfo = domainURL+ 'index.php/rest/V1/Iorder/details/';

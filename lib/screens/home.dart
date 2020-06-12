@@ -147,7 +147,7 @@ Future<void> isLoggedIn() async
 
   Widget getDD(dynamic variable)
   {
-    if(variable.length == 0)
+    if(isLoading)
     {
       return  Container(height: MediaQuery.of(context).size.width,child: Center(child: CircularProgressIndicator()));
     }
@@ -157,8 +157,19 @@ Future<void> isLoggedIn() async
       {
         list.add(new OrderListCell(variable[i], true));
       }
-
     }
+    if(list.length == 0)
+    {
+      list.add(Center(child: Container(
+        margin: EdgeInsets.all(35),
+        child: Text("No Orders",
+        style: TextStyle(
+          color: lightestText,
+          fontSize: 17
+        )))));
+    }
+
+   
     return new Column(crossAxisAlignment: CrossAxisAlignment.stretch,children: list);
   }
 
